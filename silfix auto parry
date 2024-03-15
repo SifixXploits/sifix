@@ -1,14 +1,14 @@
 local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
 
-local PhantomForcesWindow = Library:NewWindow("sifix ")
+local PhantomForcesWindow = Library:NewWindow("sifix")
 
-local AutoParry = PhantomForcesWindow:NewSection("Main")
+local AutoParry = PhantomForcesWindow:NewSection("start")
 
 AutoParry:CreateButton("Hold Block To Spam", function()getgenv().SpamSpeed = 1
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Spam",true))()
 end)
 
-AutoParry:CreateToggle("Auto Parry", function()getgenv().config = getgenv().config or {
+AutoParry:CreateToggle("parry auto", function()getgenv().config = getgenv().config or {
     hit_time = 0.5, -- // recommended 0.25 to 0.75 \ --
     
     mode = 'Always', -- // Hold , Toggle , Always \ --
